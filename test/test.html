@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script type='text/javascript' src="../DIP.js"></script>
+        <script type='text/javascript' src="test.js"></script>
+        <style>
+            button{
+                height: 60px;
+                width:180px;
+                display: inline-block;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas0"></canvas>
+        <input id='imgfile' type="file" onchange="loadGM();">
+        <button onclick="draw(0)">绘图</button>
+        <button onclick="test(0)">保存</button>
+        <button onclick="test(1)">图像反转</button>
+        <button onclick="test(2)">对数变换</button>
+        <button onclick="test(3)">幂律变换</button>
+        <button onclick="test(4)">对比度拉伸</button>
+        <button onclick="test(5)">直方图均衡</button>
+        <button onclick="test(6)">绘制直方图</button>
+        <button onclick="test(7)">撤销</button>
+
+    <canvas id="popChart" width="500" height="360"></canvas>
+    </body>
+</html>
